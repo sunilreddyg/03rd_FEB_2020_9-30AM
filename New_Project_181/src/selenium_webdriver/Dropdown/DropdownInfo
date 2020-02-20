@@ -13,12 +13,25 @@ Html Source:-->
 					commands available.These commands only we can use for
 					select tag elements.
 
-				Syntax:--->to select dropdown option
+				    =>methods to select dropdown option
 			
-					Select obj=new Select(webElement);           //webelement:---> locate element 								at browser window	
-					obj.SelectByvisibletext("dropdown optioname");			 
-					obj.SelectByvalue("option value property");
-					obj.SelectByindex(int option-position);
+						1. SelectByvisibleText
+						2. SelectByValue
+						3. SelectByIndex
+						
+					=> Methods to deselect dropdown option
+						4. deselectAll
+						5. deselectbyVisibleText
+						6. deselectbyIndex
+						7. deselectbyValue
+						
+					=> Methods to verify dropdown status
+						8. isMultiple
+						
+					=> Method to retrieve dropdown option
+						9. getAllSelectedOptions
+						10.getFirstSelected option
+						11.getOptions
 			
 					//Instant selection method
 					new Select(WebElement).selectByvisibleText("Optionname);
@@ -46,7 +59,7 @@ Html Source:-->
 			
 Example:---> Select Feb option  from above html source using Visible text
 
-new Select(driver.findElement(By.id("month"))).selectByvisibletext("Feb");
+		new Select(driver.findElement(By.id("month"))).Selectbyvisibletext("Feb");
 
 ----------------------------
 Selectbyvalue:--->
