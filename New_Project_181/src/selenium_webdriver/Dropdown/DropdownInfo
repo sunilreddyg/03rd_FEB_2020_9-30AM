@@ -150,18 +150,42 @@ Syntax:--->
 
 	Note:---> all deselect options will be performed on
 		multiple selection only.
-		===========================================================
+===========================================================
+getAllSelectedOptions:-->
+		Method retrieve Selection of option into List Interface.List
+		is a collection framework it store group of objects and allow to
+		enahance objects at runtime...
+		
+	  	Syntax:-->	
+	  			List<WebElement> list=new Select(WebElement).getAllSelectedOptions();
+		
+				=> Get Count of Selection objects
+						int Count=list.size();
+	
+				=> Get Any single object from group of objects
+						WebElemnet SingleOption=list.get(1);
+===============================================================================
+FirstSelectedOption:-->
+		Method return first selected option with in multiple selection dropdown.
+		
+		Syntax:-->
+				WebElement FirstOption=new Select(Webelement).getFirstselectedOptions();
 
+================================================================================
+getOptions:-->
+		Method collect all option element under dropdown into list interface.List
+		is a collection framework it store group of objects and allow to
+		enahance objects at runtime...
+		
+		Syntax:-->
+			List<WebElement> AllOptions=new Select(WebElement).getOptions();
 
-
-
-
-
-
-
-
-
-
+				=> Get Count of dropdown options
+						int Count=AllOptions.size();
+	
+				=> Get Any single object from group of objects
+						WebElemnet SingleOption=AllOptions.get(5);
+						SingleOption.Click();
 
 
 
