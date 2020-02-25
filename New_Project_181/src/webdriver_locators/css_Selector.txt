@@ -45,7 +45,7 @@ Default_css:-->
 
 		driver.findElement(By.cssSelector("input#email.login"));
 ===============================================================>>
-page htmlsource:--->
+page htmlsource:---> Identify 3rd object using combination of cssselector
 
 1. <div class="C"></div>
 2. <div id="x" class="B"</div>
@@ -67,15 +67,16 @@ CssSelector =>  Default cssselector --->Combinations
 	tagname.classname
 	tagname#id
 ==============================================================
-Default CssSelector when Clas property having space:-->
+Default CssSelector when Class property having space:-->
 
 HtmlSource:-->
 		<button  class="user reg account"></button>
-
+	
 		By.cssSelector(".user.reg.account")
-		By.cssSelector(".user")
 		By.cssSelector(".reg.account")
-
+		By.cssSelector(".user")
+		By.cssSelector(".account")
+		By.cssSelector(".reg")
 ==============================================================
 Css_Attribute:-->
 		Instead of target elements with id and name property. We can
@@ -123,7 +124,7 @@ Dynamic Css:-->
 	Target Web element location with partial attributes.
 
 		=>    *   [ Any matching characters]
-		=>    $  [End characters]
+		=>    $   [End characters]
 		=>    ^   [Start characters]
 
 Example:--> target element with matching characters
@@ -167,11 +168,10 @@ HtmlSource:-->
 		By.cssSelector("div[id='login_conainer'] >  input")
 
 ====================================================================
-
 HtmlSource:--> parent and child identification using  <<SPACE>>
 			   It identify matching descendent under parent..
 	
-	<div id="login_conainer"  class="demo">
+	<div id="login_container"  class="demo">
 		<div class="demo">
 			<input id="9ju7yg876"  type="text">  ---->Target Element
 		</div>
@@ -180,7 +180,7 @@ HtmlSource:--> parent and child identification using  <<SPACE>>
 Syntax:-->
 		parentnode  <space> childnode...
 
-		By.cssSelector("div[id='login_conainer']  input")
+		By.cssSelector("div[id='login_container']  input")
 ====================================================================
 HtmlSource:--> Identify Required node with help of sibling node..
 
