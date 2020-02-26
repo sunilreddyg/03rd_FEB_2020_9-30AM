@@ -18,7 +18,7 @@ Recognize object when parent element having single child element
 Syntax:-->
 	parenttagname[property='pvalue'] > childtagname
 
-	By.CssSelector("")
+	By.CssSelector("div[id='reg_login'] > input")
 
 ==============================================================================
 Example2:-->
@@ -41,7 +41,7 @@ Recognize object when parent element having Group child element
 Syntax:-->
 	parenttagname[property='pvalue'] > childtagname[prop='pvalue']
 
-	By.CssSelector("")
+	By.CssSelector("div[id='reg_login'] > input#email")
 ----------------------------------------------------------------------	
 Example3:-->
 Recognize object when parent-element having duplicate child-elements
@@ -66,7 +66,7 @@ Cssposition:--->
 			
 		Relative syntax with position:--->
 				
-		By.CssSelector("")		
+		By.CssSelector("div[id='reg_login'] > input:nth-child(2)")		
 				
 ------------------------------------------------------------->>
 Example:-->
@@ -83,7 +83,7 @@ Css Position syntax:-->
 			
 				tagname:nth-child(int pos)
 				
-				By.CssSelector("")		
+				By.CssSelector("select[id='ClassType'] > option:nth-child(2)")	
 				
 ------------------------------------------------------------------->>
 Example:-->
@@ -101,7 +101,7 @@ Recognize object with sibling node..
 	
 	Syntax:-->
 	
-			By.CssSelector("")		
+			By.CssSelector("input[id='sample'] + input")		
 =======================================================================
 Example:-->
 Recognize object with sibling node..
@@ -119,7 +119,7 @@ Recognize object with sibling node..
 	
 	Syntax:-->
 	
-			By.CssSelector("")			
+			By.CssSelector("input[id='sample']+input+input")			
 	
 ==========================================================================
 

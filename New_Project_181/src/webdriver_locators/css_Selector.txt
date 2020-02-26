@@ -183,6 +183,7 @@ Syntax:-->
 		By.cssSelector("div[id='login_container']  input")
 ====================================================================
 HtmlSource:--> Identify Required node with help of sibling node..
+				[+ symbol identify sibling node]
 
 	<div class="demo">
 		<label id="email-login"> <label>
@@ -190,10 +191,9 @@ HtmlSource:--> Identify Required node with help of sibling node..
 	</div>	
 
 
-
 		By.cssSelector("label[id='email-login'] + input")
 
-
+=========================================================================
 
 
 
