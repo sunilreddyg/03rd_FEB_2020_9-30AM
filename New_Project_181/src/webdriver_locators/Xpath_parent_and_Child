@@ -104,7 +104,7 @@ HtmlSource:-->
 				tagname[int position]
 				
 				By.xpath("/html/body/div[2]/input[2]")     --> Absolute
-				By.xpath("//input[2]")                     --> Xpath index          
+				By.xpath("//input[2]")     --> Xpath index          
 ----------------------------------------------------------------
 Example4:-->
 Recognize object with multiple attributes[using <AND> comparision]
@@ -297,6 +297,11 @@ Example15:-->
 		
 		Syntax:-->
 				By.xpath(//input[@id='firstname']/parent::div)
-===============================================================================			
+===============================================================================	
+
+
+
+
+		
 			
 		
