@@ -9,7 +9,7 @@ Xpath:-->
 
 
 Xpath Attribute :-->
-	Below syntax idefity location at webpage using unique attributes..
+	Below syntax identify location at webpage using unique attributes..
 
 	//tagname[@Attributename =  'Attribute value']
 	//*[@Attributename =  'Attribute value']
@@ -22,6 +22,10 @@ Xpath Attribute :-->
 	*   => All elements under current node.
 	[]  => Allow multiple attributes to define
 	@  => Only Attributes ---> Refer attribute at html node
+	
+	===================================================
+	.. => RootNode
+	. => ChildNode
 	
 Html Source:-->
 
@@ -86,6 +90,8 @@ To identify Xpath using  AND function.
 		//tagname[@prop='pvalue' and  @prop='pvalue']
 		//tagname[@prop='pvalue' and  text()='innertext']	   
 		
+		//Multiple attributes/text to define
+		//tagname[@Aname='Avalue'][text()='InnerText']
 		
 To identify xpath using OR function.		
 		
@@ -97,7 +103,7 @@ To Recognize object with multiple attributes
 			 
 		//*[@prop='pvalue' and (@prop='pvalue' or  @prop='pvalue')]
 		//*[@prop='pvalue' or (@prop='pvalue' and  @prop='pvalue')]
-	       		
+	   		
 ===================================================================..
 Example:-->  Target Element with parent Node.
 
