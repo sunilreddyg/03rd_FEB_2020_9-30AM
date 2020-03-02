@@ -99,11 +99,10 @@ Types of variables available in Java?...>
 
 1.Local Variable:--->
 
-	These variables define inside method, it can't share inforamtion
-	to other methods also for  other classes.
+	These variables define inside method, So that We can't reuse variable
+	information outside method..
 	
 	Syntax:--->
-
 		public class Phone
 		{
 			void Landphone()
@@ -114,10 +113,8 @@ Types of variables available in Java?...>
 
 			void mobile()
 			{
-
 				system.out.println(price);
-			//local variable can't share information to other methods
-					
+				//local variable can't share information to other methods	
 			}
 		}
 ====================================================================
@@ -144,8 +141,9 @@ Types of variables available in Java?...>
 ------------------------------------------------------------->>>>
 Instant Variable:---->
 
-		Instant Variable Define Inside the class but outside the 
-		method , these variable can access across method and classes
+		Instant Variable Define Inside the class but outside a 
+		method , these variable can access across method and classes.
+		And Instant variables called as global variable..
 
 	Note:--. We should create object to access instant variable from outside class
 		
@@ -153,7 +151,8 @@ Instant Variable:---->
 			classname ref=new classname();
 			datatype val=ref.variablename;
 			
-			Note:--> All variable return values.
+			Note:--> All variables return values.In this case we must 
+					write store procedure inorder to store return value.
 
 	Syntax:--->
 
@@ -180,7 +179,7 @@ Instant Variable:---->
 
 		public Hotmailhomepage
 		{
-			   public WebDriver driver=null;
+			   WebDriver driver;
 
 				public void launchApplication()
 				{
@@ -202,15 +201,18 @@ Instant Variable:---->
 		}
 
 ------------------------------------------------------------------------------------------------------>>>
-class variable:--> class variables are similar to instant variables only diff we declare
-	           class variables with static keyword.
+class variable:--> 
+				class variables are similar to instant variables only diff we declare
+	            class variables with static keyword. Class Varaible alos called
+	            as global variables..
 	
 		Note:--> static variables we can access without object creation.
 			Datatype variable=Classname.variablename;
-
-
-
-	
+				
+				
+				Note:--> All variables return values.In this case we must 
+						 write store procedure inorder to store return value.
+				
 	Syntax:--->
 	
 		public Phone
