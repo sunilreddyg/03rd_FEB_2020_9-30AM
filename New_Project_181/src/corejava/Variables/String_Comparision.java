@@ -1,6 +1,7 @@
 package corejava.Variables;
 
-public class String_Comparision {
+public class String_Comparision 
+{
 
 	public static void main(String[] args) 
 	{
