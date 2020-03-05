@@ -61,6 +61,82 @@ getPageSource:--->
 		
 			String pageSource=driver.getpageSource();
 			System.out.println(pageSoruce);
+=============================================================				
+getWindowHandle:-->
+		  Method capture Current window Dynamic ID at 
+		  Runtime. These id we can use for switch between windows.				
+				
+			String Dynamic_WindowID=driver.getWindowHandle();
+==============================================================
+getWindowHandles:-->
+		Method capture All Window's dynamic ID's at rutime.
+		It capture only webdriver automation window ID's.
+		
+		Set<String> AllWindowIDS=driver.getWindowHandles();
+=============================================================
+getText:-->
+
+		Method capture selected htmlnode innertext. And
+		it capture only visible text at front page incase
+		text hidden at htmlsource gettext method return empty status.
+		
+		Note1:--> Method capture only visible at front page
+		Note2:--> Method capture selected htmlnode and it's child
+					hmtlnode innertext
+		Note3:--> When selected element node doesn't contains innertext
+				  method return empty status.
+				  
+		Syntax:-->
+				WebElement Element=driver.findElement(By.Id("ElementId"));
+				String InnerText=Element.gettext();		  
+				System.out.println(InnerText);
+===========================================================================
+getAttribute("propertyname");
+	
+	Method capture runtime attribute value using attributename.
+				  
+				  
+		Syntax:-->  
+		  	WebElement Element=driver.findElement(By.id("x"));
+		  	String value=Element.getAttribute("attributename");
+		  	System.out.println(value);	
+		  	
+				  	
+  	Note:--> Developer use attributes, to chanage runtime
+  			behaviour of element. by capture element attributes
+  			at runtime we can prove element behaviour available
+			w.r.t client requirement.
+
+	Example:-->
+			Verify Editbox is readonly..
+		HtmlSource:-->	
+					<input id="Dp_date"  readonly="readonly">  
+					
+			String Runtime_value=driver.findElement.getAttribute("readonly");
+			if(Runtime_value.contains("readonly))
+				System.out.println("Editox is readonly");
+			else
+				System.out.println("Editox is writable, Testfail");
+
+
+	 Example:--> 
+	 			Capture Editbox input value ,[Either typed or autogenarated]
+
+				Syntax:-->
+						WebElement Editbox=driver.findElement(By.Id("ElementID"));
+						String InputValue=Editbox.getAttribute("value");
+						System.out.println(InputValue);
+
+
+
+
+
+
+
+
+				
+				
+				
 				
 				
 				
